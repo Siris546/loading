@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+}
+.bg{
+background: url('unnamed.jpg')
+no-repeat center center/cover;
+position: absolute; /*important css property so as to make appear bg and loading on the same element rather than two different elements*/
+top: -30px;
+left: -30px; /*to adjust the blur on the sides*/
+width: calc(100vw + 60px);
+height: calc(100vh + 60px); /*to make up for the reduced top and left attribute*/
+z-index: -1;
+filter: blur(0px);
+}
+
+.loading{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
